@@ -23,6 +23,16 @@ speed-measure-plugin*.json
 .settings/
 *.sublime-workspace
 
+######################
+# Intellij
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
