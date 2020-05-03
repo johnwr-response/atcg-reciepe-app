@@ -14,6 +14,12 @@ ng g c shopping-list --skipTests true
 ng g c shopping-list/shopping-edit --skipTests true
 ```
 
+# Services
+```
+ng g s recipes/recipe --skipTests true
+ng g s shopping-list/shopping-list --skipTests true
+```
+
 
 
 # Git
