@@ -13,7 +13,7 @@ ng g c recipes/recipe-list/recipe-item --skipTests true
 ng g c shopping-list --skipTests true
 ng g c shopping-list/shopping-edit --skipTests true
 
-ng g c recipes/recipe-edit --skipTests true
+ng g c recipes/recipe-start --skipTests true
 ```
 
 # Services
