@@ -23,7 +23,14 @@ ng g s recipes/recipe --skipTests true
 ng g s shopping-list/shopping-list --skipTests true
 ```
 
+# Tips & Tricks
+As of Angular 8+, there's a new way of clearing all items in a FormArray:
+```
+(<FormArray>this.recipeForm.get('ingredients')).clear();
+```
+The clear() method automatically loops through all registered FormControls (or FormGroups) in the FormArray and removes them.
 
+It's like manually creating a loop and calling removeAt() for every item.
 
 # Git
 
