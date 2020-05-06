@@ -27,6 +27,13 @@ export class RecipeService {
       [
         new Ingredient('Buns',2),
         new Ingredient('Meat',1)
+      ]),
+    new Recipe(
+      'Spaghetti',
+      'Tasty Spaghetti!',
+      'https://upload.wikimedia.org/wikipedia/commons/2/2a/Spaghetti_al_Pomodoro.JPG',
+      [
+        new Ingredient('Spaghetti',10)
       ])
   ];
 
