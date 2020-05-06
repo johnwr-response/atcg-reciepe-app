@@ -33,7 +33,8 @@ export class RecipeService {
       'Tasty Spaghetti!',
       'https://upload.wikimedia.org/wikipedia/commons/2/2a/Spaghetti_al_Pomodoro.JPG',
       [
-        new Ingredient('Spaghetti',10)
+        new Ingredient('Spaghetti',100),
+        new Ingredient('Tomatoes',3),
       ])
   ];
 
