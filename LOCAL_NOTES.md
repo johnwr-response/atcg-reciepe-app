@@ -32,6 +32,11 @@ The clear() method automatically loops through all registered FormControls (or F
 
 It's like manually creating a loop and calling removeAt() for every item.
 
+# Firebase Setup
+  - Create database
+    - https://ngcg-recipe-book.firebaseio.com/
+
+
 # Git
 
 ```
