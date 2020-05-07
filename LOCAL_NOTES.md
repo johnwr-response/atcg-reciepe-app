@@ -21,6 +21,9 @@ ng g c recipes/recipe-edit --skipTests true
 ```
 ng g s recipes/recipe --skipTests true
 ng g s shopping-list/shopping-list --skipTests true
+
+ng g s shared/data-storage --skipTests true
+
 ```
 
 # Tips & Tricks
