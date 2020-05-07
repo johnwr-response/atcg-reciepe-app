@@ -37,6 +37,7 @@ export class AuthComponent {
     authObservable.subscribe(responseData => {
       console.log(responseData);
       this.isLoading = false;
+      this.error = null;
     }, errorMessage => {
       console.log(errorMessage);
       this.error = errorMessage;
