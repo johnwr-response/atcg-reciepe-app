@@ -38,6 +38,9 @@ It's like manually creating a loop and calling removeAt() for every item.
 # Firebase Setup
   - Create database
     - https://ngcg-recipe-book.firebaseio.com/
+  - Add auth
+    - In Database.Rules, set both read and write to "auth != null"
+    - Authentication | Set up sign-in method | Email/Password
 
 
 # Git
