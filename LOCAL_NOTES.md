@@ -41,6 +41,8 @@ It's like manually creating a loop and calling removeAt() for every item.
   - Add auth
     - In Database.Rules, set both read and write to "auth != null"
     - Authentication | Set up sign-in method | Email/Password
+        - Find firebase Web API Key in Project Settings
+        - https://firebase.google.com/docs/reference/rest/auth
 
 
 # Git
