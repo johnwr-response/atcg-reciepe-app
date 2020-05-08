@@ -39,6 +39,7 @@ It's like manually creating a loop and calling removeAt() for every item.
 - Loading Spinners: https://loading.io/css/
 - Firebase Auth REST API Docs: https://firebase.google.com/docs/reference/rest/auth
 - More on JWT: https://jwt.io/
+- Dynamic Components:  https://angular.io/guide/dynamic-component-loader
 
 # Firebase Setup
   - Create database
