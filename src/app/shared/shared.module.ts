@@ -21,7 +21,8 @@ import {CommonModule} from "@angular/common";
     PlaceholderDirective,
     DropdownDirective,
     CommonModule
-  ]
+  ],
+//  providers: [LoggingService]
 })
 export class SharedModule {
 

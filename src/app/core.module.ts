@@ -4,7 +4,8 @@ import {AuthInterceptorService} from "./auth/auth-interceptor.service";
 
 @NgModule({
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true},
+//    LoggingService
   ]
 })
 export class CoreModule {
