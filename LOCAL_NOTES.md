@@ -52,10 +52,30 @@ It's like manually creating a loop and calling removeAt() for every item.
         - Find firebase Web API Key in Project Settings
         - https://firebase.google.com/docs/reference/rest/auth
 
+# Firebase Hosting:
+```
+npm install -g firebase-tools
+firebase login
+firebase init
+    Select Hosting: ...
+    Select Use an existing project and then the actual project
+    Add the dist folder as public directory: dist/recipe-app
+    Choose to configure as a single-page app
+    Choose NOT to override the index.html file
+firebase deploy
+    This will then show the utl for both the application and its console\
+```
+Project Console: https://console.firebase.google.com/project/ngcg-recipe-book/overview
+Hosting URL: https://ngcg-recipe-book.web.app
+
+
+
 # Ahead of time compilation
 ```
 ng build --prod
 ```
+
+
 
 # Git
 
