@@ -50,6 +50,10 @@ It's like manually creating a loop and calling removeAt() for every item.
         - Find firebase Web API Key in Project Settings
         - https://firebase.google.com/docs/reference/rest/auth
 
+# Ahead of time compilation
+```
+ng build --prod
+```
 
 # Git
 
