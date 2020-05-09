@@ -75,7 +75,10 @@ Hosting URL: https://ngcg-recipe-book.web.app
 ng build --prod
 ```
 
+# Server Routing vs Browser Routing
+When deploying your Angular app, it's really important to make sure that your server (like S3) is configured to always serve the index.html file.
 
+Here's why: https://academind.com/learn/angular/angular-q-a/#how-to-fix-broken-routes-after-deployment
 
 # Git
 
