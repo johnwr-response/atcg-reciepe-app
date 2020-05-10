@@ -80,6 +80,12 @@ When deploying your Angular app, it's really important to make sure that your se
 
 Here's why: https://academind.com/learn/angular/angular-q-a/#how-to-fix-broken-routes-after-deployment
 
+# NgRx
+```
+npm install --save @ngrx/store
+```
+
+
 # Git
 
 ```
