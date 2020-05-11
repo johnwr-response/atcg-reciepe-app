@@ -83,6 +83,8 @@ Here's why: https://academind.com/learn/angular/angular-q-a/#how-to-fix-broken-r
 # NgRx
 ```
 npm install --save @ngrx/store
+npm install --save @ngrx/effects
+
 ```
 
 
