@@ -1,7 +1,8 @@
 import {Injectable} from "@angular/core";
 import {Actions, Effect, ofType} from '@ngrx/effects';
+import {Router} from "@angular/router";
 import {of} from "rxjs";
-import {catchError, map, switchMap} from "rxjs/operators";
+import {catchError, map, switchMap, tap} from "rxjs/operators";
 import {HttpClient} from "@angular/common/http";
 import * as AuthActions from './auth.actions'
 import {environment} from "../../../environments/environment";
@@ -32,21 +33,37 @@ export class AuthEffects {
       ).pipe(
         map(responseData => {
           const expirationDate = new Date(new Date().getTime() + (+responseData.expiresIn * 1000));
-          return of(new AuthActions.Login({
+          return new AuthActions.Login({
             email: responseData.email,
             userId: responseData.localId,
             token: responseData.idToken,
             exirationDate: expirationDate
-          }));
+          });
         }),
-        catchError(error => {
-          // ...
-          return of();
+        catchError(errorResponse => {
+          let errorMessage = 'An unknown error occurred!';
+          if (!errorResponse.error || !errorResponse.error.error) {
+            return of(new AuthActions.LoginFail(errorMessage));
+          }
+          switch (errorResponse.error.error.message) {
+            case 'EMAIL_EXISTS': errorMessage = 'This e-mail already exists';break;
+            case 'EMAIL_NOT_FOUND': errorMessage = 'This e-mail does not exist';break;
+            case 'INVALID_PASSWORD': errorMessage = 'This password is not correct';break;
+          }
+          return of(new AuthActions.LoginFail(errorMessage));
         }),
       );
     }),
 
   );
 
-  constructor(private actions$: Actions, private http: HttpClient) {}
+  @Effect({dispatch: false})
+  authSuccess = this.actions$.pipe(
+    ofType(AuthActions.LOGIN),
+    tap(() => {
+      this.router.navigate(['/']);
+    })
+  );
+
+  constructor(private actions$: Actions, private http: HttpClient, private router: Router) {}
 }
