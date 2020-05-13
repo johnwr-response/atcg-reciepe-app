@@ -92,6 +92,10 @@ npm install --save @ngrx/effects
 ```
 npm install --save-dev @ngrx/store-devtools
 ```
+# Router Store
+```
+npm install --save @ngrx/router-store
+```
 
 # Git
 
