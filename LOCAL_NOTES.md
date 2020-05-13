@@ -86,7 +86,12 @@ npm install --save @ngrx/store
 npm install --save @ngrx/effects
 
 ```
-
+# Redux Devtools Extension
+- Github: https://github.com/zalmoxisus/redux-devtools-extension
+- Webpage: http://extension.remotedev.io/
+```
+npm install --save-dev @ngrx/store-devtools
+```
 
 # Git
 
