@@ -20,7 +20,7 @@ export function authReducer(state = initialState, action: AuthActions.AuthAction
         action.payload.email,
         action.payload.userId,
         action.payload.token,
-        action.payload.exirationDate
+        action.payload.expirationDate
       );
       return {
         ...state,
