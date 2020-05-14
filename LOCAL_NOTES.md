@@ -110,8 +110,13 @@ ng add @nguniversal/express-engine --clientProject recipe-app
 # npm install --save @nguniversal/module-map-ngfactory-loader
 npm run build:ssr
 npm run serve:ssr
-
 ```
+# Angular Universal with NestJS
+NestJS - An Introduction : https://academind.com/learn/node-js/nestjs-introduction/
+```
+ng add @nestjs/ng-universal
+```
+
 
 # Git
 
