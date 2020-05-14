@@ -81,6 +81,8 @@ When deploying your Angular app, it's really important to make sure that your se
 Here's why: https://academind.com/learn/angular/angular-q-a/#how-to-fix-broken-routes-after-deployment
 
 # NgRx
+- Webpage: http://ngrx.io/
+- Github with an example app: https://github.com/ngrx/platform
 ```
 npm install --save @ngrx/store
 npm install --save @ngrx/effects
