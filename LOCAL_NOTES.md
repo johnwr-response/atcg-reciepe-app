@@ -104,6 +104,15 @@ npm install --save-dev @ngrx/store-devtools
 npm install --save @ngrx/router-store
 ```
 
+# Angular Universal
+```
+ng add @nguniversal/express-engine --clientProject recipe-app
+# npm install --save @nguniversal/module-map-ngfactory-loader
+npm run build:ssr
+npm run serve:ssr
+
+```
+
 # Git
 
 ```
