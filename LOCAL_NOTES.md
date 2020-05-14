@@ -86,8 +86,13 @@ Here's why: https://academind.com/learn/angular/angular-q-a/#how-to-fix-broken-r
 ```
 npm install --save @ngrx/store
 npm install --save @ngrx/effects
-
 ```
+
+#### Alternative NgRx Syntax
+https://www.udemy.com/the-complete-guide-to-angular-2/learn/lecture/14466642#questions/7350498
+
+(See NEW_NGRX_SYNTAX.md)
+
 # Redux Devtools Extension
 - Github: https://github.com/zalmoxisus/redux-devtools-extension
 - Webpage: http://extension.remotedev.io/
